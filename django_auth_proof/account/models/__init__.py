@@ -1,0 +1,1 @@
+from django_auth_proof.account.models.user import User

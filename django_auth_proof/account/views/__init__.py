@@ -1,0 +1,5 @@
+from django_auth_proof.account.views.user_create_view import UserCreateView
+from django_auth_proof.account.views.user_update_view import UserUpdateView
+from django_auth_proof.account.views.user_login_view import LoginView
+from django_auth_proof.account.views.user_profile_view import UserProfileView
+from django_auth_proof.account.views.user_logout_view import UserLogoutView

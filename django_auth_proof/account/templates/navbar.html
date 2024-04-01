@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand btn btn-primary text-white" href="{% url 'account:login' %}">Django Auth</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto"> <!-- ms-auto alinha os itens à direita -->
+                <li class="nav-item dropdown">
+                    {% if user.is_authenticated %}
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                    {% endif %}
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                        {% if user.is_authenticated %}
+                            <li><a class="dropdown-item" href="{% url 'account:user-logout' %}">Logout</a></li>
+                            <li><a class="dropdown-item" href="{% url 'account:user-update' user.id %}">Update Account</a></li>
+                        {% else %}
+                            <li><a class="dropdown-item" href="{% url 'account:user-create' %}">Create Account</a></li>
+                        {% endif %}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,2 @@
+from django_auth_proof.account.forms.user_creation_form import UserCreationForm
+from django_auth_proof.account.forms.user_change_form import UserChangeForm
