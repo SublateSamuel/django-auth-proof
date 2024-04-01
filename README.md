@@ -2,7 +2,7 @@
 
 Este repositório apresenta uma prova de conceito para a implementação de um sistema de autenticação completo em Django, demonstrando a personalização do modelo de usuário através da extensão da classe `AbstractUser`. O objetivo é fornecer um exemplo concreto de como construir um sistema de autenticação que não só atenda às necessidades básicas de segurança mas também ofereça flexibilidade para adaptações futuras, tudo isso utilizando as poderosas ferramentas e classes fornecidas pelo Django.
 
-## Technologies Used
+## Tecnologias Usadas
 
 - **Linguagem**: Python3.12
 - **Framework**: Django
